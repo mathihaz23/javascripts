@@ -10,7 +10,7 @@ if(edad>60){
 }else{
     alert("Usted es menor para jubilarse");
 };
-//-------------------------------
+//-------------------------------parte 2
 alert("PARTE 2")
 var edad2=prompt("cuantos años tiene actualmente");
 var sexo= prompt("escriba si es hombre o mujer");
