@@ -56,7 +56,7 @@ function palabraRandomica(){
 }
 function actualizarTiempo(){
     time--;
-    tiempoRestante.innerText= "Tiempo restante: " + time + " s";
+    tiempoRestante.innerText= "Tiempo restante: " + (1 + time) + " s";
     if(time==0){
         tiempoRestante.innerText="Game Over";
         clearInterval(idInterval);     
@@ -80,12 +80,11 @@ function updateScore(){
 }
 
 //let tiempoAdd=document.querySelector("#timeSpan");
-let ptostime = 3;
-
 //score.innerHTML=time;
 function updateTime(){
-
-    tiempoRestante.innerText= "Tiempo restante: " + (time + ptostime) + " s";
+    time+=3 
+    //tiempoAdd.innerText= ptostime + time;
+    tiempoRestante.innerText= "Tiempo restante: " + (time) + " s";
 }
 
 //eventos-------------------------------------------------------------
